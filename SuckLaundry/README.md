@@ -35,3 +35,6 @@ Assume that
 `noOfWashes` is an integer within the range `0...50`
 `cleanPile` and `dirtyPile` is an integer array within the range `1...50`, they cannot be empty, and contain at most 50 elements.
 
+## Skipped test methods
+Skipped test methods won't run.
+Remove the skipped annotation on a test method to allow it to run
