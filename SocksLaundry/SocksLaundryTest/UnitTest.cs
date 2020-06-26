@@ -1,9 +1,8 @@
+using SocksLaundryLib;
 using System;
 using Xunit;
-using SuckLaundryLib;
 
-
-namespace SockLaundryTest
+namespace SocksLaundryTest
 {
 
 
@@ -11,25 +10,26 @@ namespace SockLaundryTest
     // Remove the skipped annotation on the test method to enable you run it
 
 
-    public class UnitTest1
+    public class UnitTest
     {
         [Fact]
         public void Test()
         {
-            Assert.Equal(1,1);
+            Assert.Equal(1, 1);
         }
 
-		[Fact(Skip = "Skipped")]
-		public void test1(){
-			int numberMachineCanWash = 0;
-			int[] cleanPile = new int[] { 1, 2, 1, 1 };
-			int[] dirtyPile = new int[] { 1, 4, 3, 2, 4 };
-			int pairs = new ClassLib().GetMaximumPairOfSocks(numberMachineCanWash, cleanPile, dirtyPile);
-			Assert.Equal(1, pairs);
-		}
+        [Fact(Skip = "Skipped")]
+        public void Test1()
+        {
+            int numberMachineCanWash = 0;
+            int[] cleanPile = new int[] { 1, 2, 1, 1 };
+            int[] dirtyPile = new int[] { 1, 4, 3, 2, 4 };
+            int pairs = new ClassLib().GetMaximumPairOfSocks(numberMachineCanWash, cleanPile, dirtyPile);
+            Assert.Equal(1, pairs);
+        }
 
         [Fact(Skip = "Skipped")]
-        public void test2()
+        public void Test2()
         {
             int numberMachineCanWash = 2;
             int[] cleanPile = new int[] { 1, 2, 1, 1 };
@@ -40,7 +40,7 @@ namespace SockLaundryTest
         }
 
         [Fact(Skip = "Skipped")]
-        public void test4()
+        public void Test4()
         {
             int numberMachineCanWash = 3;
             int[] cleanPile = new int[] { 1, 2, 1, 1 };
@@ -51,7 +51,7 @@ namespace SockLaundryTest
         }
 
         [Fact(Skip = "Skipped")]
-        public void test5()
+        public void Test5()
         {
             int numberMachineCanWash = 2;
             int[] cleanPile = new int[] { 1, 2, 3, 1, 2, 3 };
@@ -62,7 +62,7 @@ namespace SockLaundryTest
         }
 
         [Fact(Skip = "Skipped")]
-        public void test6()
+        public void Test6()
         {
             int numberMachineCanWash = 4;
             int[] cleanPile = new int[] { 1, 1, 1, 1, 1, 1 };
@@ -73,7 +73,7 @@ namespace SockLaundryTest
         }
 
         [Fact(Skip = "Skipped")]
-        public void test7()
+        public void Test7()
         {
             int numberMachineCanWash = 0;
             int[] cleanPile = new int[] { 1 };
@@ -84,7 +84,7 @@ namespace SockLaundryTest
         }
 
         [Fact(Skip = "Skipped")]
-        public void test8()
+        public void Test8()
         {
             int numberMachineCanWash = 20;
             int[] cleanPile = new int[] { 50, 50, 50, 37, 38, 37, 49, 39, 38, 45, 43 };
@@ -95,7 +95,7 @@ namespace SockLaundryTest
         }
 
         [Fact(Skip = "Skipped")]
-        public void test9()
+        public void Test9()
         {
             int numberMachineCanWash = 20;
             int[] cleanPile = new int[] { 1 };
@@ -106,7 +106,7 @@ namespace SockLaundryTest
         }
 
         [Fact(Skip = "Skipped")]
-        public void test10()
+        public void Test10()
         {
             int numberMachineCanWash = 50;
             int[] cleanPile = new int[] { 40, 40, 40, 40, 40, 40, 40, 50, 50, 50, 50, 50 };
@@ -117,7 +117,7 @@ namespace SockLaundryTest
         }
 
         [Fact(Skip = "Skipped")]
-        public void test11()
+        public void Test11()
         {
             int numberMachineCanWash = 1;
             int[] cleanPile = new int[] { 8 };
@@ -129,7 +129,7 @@ namespace SockLaundryTest
         }
 
         [Fact(Skip = "Skipped")]
-        public void test12()
+        public void Tst12()
         {
             int numberMachineCanWash = 20;
             int[] cleanPile = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
@@ -141,7 +141,7 @@ namespace SockLaundryTest
         }
 
         [Fact(Skip = "Skipped")]
-        public void test13()
+        public void Test13()
         {
             int numberMachineCanWash = 20;
             int[] cleanPile = new int[] { 5, 5, 5, 5, 5, 5, 5, 5, 5, 5 };
@@ -153,7 +153,7 @@ namespace SockLaundryTest
         }
 
         [Fact(Skip = "Skipped")]
-        public void test14()
+        public void Test14()
         {
             int numberMachineCanWash = 20;
             int[] cleanPile = new int[] { 5, 5, 5, 5, 5, 5, 5, 5, 5, 5 };
@@ -165,7 +165,7 @@ namespace SockLaundryTest
         }
 
         [Fact(Skip = "Skipped")]
-        public void test15()
+        public void Test15()
         {
             int numberMachineCanWash = 0;
             int[] cleanPile = new int[] { 5, 5, 5, 5, 5, 5, 5, 5, 5, 5 };
@@ -177,7 +177,7 @@ namespace SockLaundryTest
         }
 
         [Fact(Skip = "Skipped")]
-        public void test16()
+        public void Test16()
         {
             int numberMachineCanWash = 30;
             int[] cleanPile = new int[] { 1, 2, 3, 4, 6, 7, 8, 9, 10, 11 };
@@ -189,7 +189,7 @@ namespace SockLaundryTest
         }
 
         [Fact(Skip = "Skipped")]
-        public void test17()
+        public void Test17()
         {
             int numberMachineCanWash = 4;
             int[] cleanPile = new int[] { 1, 2, 3, 4, 6, 7, 8, 9, 10, 11 };
@@ -201,7 +201,7 @@ namespace SockLaundryTest
         }
 
         [Fact(Skip = "Skipped")]
-        public void test18()
+        public void Test18()
         {
             int numberMachineCanWash = 5;
             int[] cleanPile = new int[] { 1, 2, 3, 2, 3, 4, 5 };

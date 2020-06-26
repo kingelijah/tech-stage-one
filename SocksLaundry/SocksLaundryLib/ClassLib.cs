@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SuckLaundryLib
+namespace SocksLaundryLib
 {
     public class ClassLib
     {
